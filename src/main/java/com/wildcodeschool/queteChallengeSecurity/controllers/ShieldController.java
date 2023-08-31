@@ -19,7 +19,9 @@ public class ShieldController {
 
     @GetMapping("/secret-bases")
     public String secret() {
-        return "Les villes des campus de la Wild sont : Bordeaux,Paris,Nantes,Lille,Toulouse,Lyon";
+        List<String> cities = Arrays.asList("Paris", "Bordeaux", "Lyon","Nantes","Lille","Toulouse");
+        return cities.toString();
+        
 
     }
 }
